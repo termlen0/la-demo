@@ -2,7 +2,7 @@
 - name: ADD A NEW LOOPACK INTERFACE
   eos_interface:
     name: Loopback100
-    enable: True
+    enabled: True
 
 - name: CONFIGURE LOOPBACK 100
   eos_interface:
