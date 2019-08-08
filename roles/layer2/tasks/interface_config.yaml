@@ -8,5 +8,3 @@
   eos_interface:
       name: Loopback100
       description: Managed by Ansible
-      speed: 100full
-      mtu: 512
