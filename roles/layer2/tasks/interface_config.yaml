@@ -8,3 +8,8 @@
   eos_interface:
       name: Loopback100
       description: Managed by Ansible
+
+- name: CONFIGURE AN IPv4 address
+  eos_l3_interface:
+    name: loopback100
+    ipv4: 192.168.0.1/24
