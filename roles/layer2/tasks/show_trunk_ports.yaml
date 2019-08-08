@@ -1,0 +1,11 @@
+---
+- name: SHOW TRUNKS
+  eos_command:
+    commands:
+      - show interfaces trunk
+  register: interface_output
+
+
+- name: DISPLAY TRUNK INFO
+  debug:
+    var: interface_output
