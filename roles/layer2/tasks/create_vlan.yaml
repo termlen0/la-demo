@@ -1,0 +1,7 @@
+---
+
+- name: ENSURE e1 IS LAYER2
+  eos_l2_interface:
+    name: Ethernet1
+    mode: access
+    access_vlan: 20
