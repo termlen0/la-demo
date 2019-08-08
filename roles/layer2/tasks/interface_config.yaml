@@ -1,0 +1,12 @@
+---
+- name: ADD A NEW LOOPACK INTERFACE
+  eos_interface:
+    name: Loopback100
+    enable: True
+
+- name: CONFIGURE LOOPBACK 100
+  eos_interface:
+      name: Loopback100
+      description: Managed by Ansible
+      speed: 100full
+      mtu: 512

@@ -1,0 +1,7 @@
+---
+- name: SWITCH DEMOS FOR LOS ALAMOS
+  hosts: rtr2
+  connection: network_cli
+
+  roles:
+    - layer2

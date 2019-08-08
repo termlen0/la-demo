@@ -1,0 +1,5 @@
+---
+
+- name: INVOKE THE ACTIVITY
+  include_tasks: "{{ activity }}.yaml"
+  when: activity is defined
