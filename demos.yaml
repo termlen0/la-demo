@@ -1,7 +1,8 @@
 ---
 - name: SWITCH DEMOS FOR LOS ALAMOS
-  hosts: rtr2
+  hosts: rtr2,rtr3
   connection: network_cli
+  gather_facts: no
 
   roles:
     - layer2
