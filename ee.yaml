@@ -1,0 +1,22 @@
+---
+- name: Test EE
+  hosts: localhost
+  gather_facts: no
+  vars:
+    my_dest: test_dir
+  tasks:
+    - name: Create the directory
+      file:
+        path: "{{ playbook_dir }}/{{ my_dest }}"
+        state: directory
+
+    - name: Write a file
+      copy:
+        contents: "Test file"
+        dest: "{{ playbook_dir }}/{{my_dest}}/my_file.txt"
+
+    - name: Append the file
+      shell:
+        cmd: ls /etc >> my_file.txt
+      args:
+        chdir: "{{ playbook_dir }}/{{my_dest}}"
