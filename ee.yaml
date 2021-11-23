@@ -12,7 +12,7 @@
 
     - name: Write a file
       copy:
-        contents: "Test file"
+        content: "Test file"
         dest: "{{ playbook_dir }}/{{my_dest}}/my_file.txt"
 
     - name: Append the file
